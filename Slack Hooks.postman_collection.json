@@ -1,0 +1,491 @@
+{
+	"info": {
+		"_postman_id": "905a92c3-e541-4aa9-aabd-870481f2ccaa",
+		"name": "Slack Hooks",
+		"description": "It's the readymade comsumption of slack incoming hooks. Prepare your desired payload and use them as templates as-you-go.\n\n[Block Kit](https://api.slack.com/block-kit) visual components to make the message more expressive and useful.  \nYou could create your desired payload by using the helpful tool called Block Kit on the fly.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31008604"
+	},
+	"item": [
+		{
+			"name": "Basic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"text\": \"This is a line of text in a channel.\\nAnd this is another line of text.\\n URL here is <https://alert-system.com/alerts/1234|Click here> for details!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"text\": \"This is a line of text in a channel.\\nAnd this is another line of text.\\n URL here is <https://alert-system.com/alerts/1234|Click here> for details!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"header\",\r\n      \"text\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \"New request\",\r\n        \"emoji\": true\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid Time Off\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Created by:*\\n<example.com|Fred Enriquez>\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*When:*\\nAug 10 - Aug 13\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid time off\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Hours:*\\n16.0 (2 days)\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Remaining balance:*\\n32.0 hours (4 days)\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"<https://example.com|View request>\"\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"header\",\r\n      \"text\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \"New request\",\r\n        \"emoji\": true\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid Time Off\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Created by:*\\n<example.com|Fred Enriquez>\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*When:*\\nAug 10 - Aug 13\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid time off\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Hours:*\\n16.0 (2 days)\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Remaining balance:*\\n32.0 hours (4 days)\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"<https://example.com|View request>\"\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"header\",\r\n      \"text\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \"New request\",\r\n        \"emoji\": true\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid Time Off\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Created by:*\\n<example.com|Fred Enriquez>\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*When:*\\nAug 10 - Aug 13\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid time off\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Hours:*\\n16.0 (2 days)\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Remaining balance:*\\n32.0 hours (4 days)\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"<https://example.com|View request>\"\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"header\",\r\n      \"text\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \"New request\",\r\n        \"emoji\": true\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid Time Off\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Created by:*\\n<example.com|Fred Enriquez>\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*When:*\\nAug 10 - Aug 13\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid time off\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Hours:*\\n16.0 (2 days)\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Remaining balance:*\\n32.0 hours (4 days)\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"<https://example.com|View request>\"\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"header\",\r\n      \"text\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \"New request\",\r\n        \"emoji\": true\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid Time Off\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Created by:*\\n<example.com|Fred Enriquez>\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*When:*\\nAug 10 - Aug 13\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid time off\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Hours:*\\n16.0 (2 days)\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Remaining balance:*\\n32.0 hours (4 days)\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"<https://example.com|View request>\"\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Message Preview",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"header\",\r\n      \"text\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \"New request\",\r\n        \"emoji\": true\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid Time Off\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Created by:*\\n<example.com|Fred Enriquez>\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*When:*\\nAug 10 - Aug 13\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Type:*\\nPaid time off\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"fields\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Hours:*\\n16.0 (2 days)\"\r\n        },\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"*Remaining balance:*\\n32.0 hours (4 days)\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"<https://example.com|View request>\"\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Attachment Preview",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"attachments\": [\r\n    {\r\n      \"color\": \"#f2c744\",\r\n      \"blocks\": [\r\n        {\r\n          \"type\": \"section\",\r\n          \"text\": {\r\n            \"type\": \"plain_text\",\r\n            \"text\": \"This is a plain text section block.\",\r\n            \"emoji\": true\r\n          }\r\n        },\r\n        {\r\n          \"type\": \"section\",\r\n          \"text\": {\r\n            \"type\": \"mrkdwn\",\r\n            \"text\": \"This is a mrkdwn section block :ghost: *this is bold*, and ~this is crossed out~, and <https://google.com|this is a link>\"\r\n          }\r\n        },\r\n        {\r\n          \"type\": \"rich_text\",\r\n          \"elements\": [\r\n            {\r\n              \"type\": \"rich_text_section\",\r\n              \"elements\": [\r\n                {\r\n                  \"type\": \"emoji\",\r\n                  \"name\": \"basketball\"\r\n                },\r\n                {\r\n                  \"type\": \"text\",\r\n                  \"text\": \" \"\r\n                },\r\n                {\r\n                  \"type\": \"emoji\",\r\n                  \"name\": \"snowboarder\"\r\n                },\r\n                {\r\n                  \"type\": \"text\",\r\n                  \"text\": \" \"\r\n                },\r\n                {\r\n                  \"type\": \"emoji\",\r\n                  \"name\": \"checkered_flag\"\r\n                }\r\n              ]\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modal Preview",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"attachments\": [\r\n    {\r\n      \"color\": \"#f2c744\",\r\n      \"blocks\": [\r\n        {\r\n          \"type\": \"section\",\r\n          \"text\": {\r\n            \"type\": \"plain_text\",\r\n            \"text\": \"This is a plain text section block.\",\r\n            \"emoji\": true\r\n          }\r\n        },\r\n        {\r\n          \"type\": \"section\",\r\n          \"text\": {\r\n            \"type\": \"mrkdwn\",\r\n            \"text\": \"This is a mrkdwn section block :ghost: *this is bold*, and ~this is crossed out~, and <https://google.com|this is a link>\"\r\n          }\r\n        },\r\n        {\r\n          \"type\": \"rich_text\",\r\n          \"elements\": [\r\n            {\r\n              \"type\": \"rich_text_section\",\r\n              \"elements\": [\r\n                {\r\n                  \"type\": \"emoji\",\r\n                  \"name\": \"basketball\"\r\n                },\r\n                {\r\n                  \"type\": \"text\",\r\n                  \"text\": \" \"\r\n                },\r\n                {\r\n                  \"type\": \"emoji\",\r\n                  \"name\": \"snowboarder\"\r\n                },\r\n                {\r\n                  \"type\": \"text\",\r\n                  \"text\": \" \"\r\n                },\r\n                {\r\n                  \"type\": \"emoji\",\r\n                  \"name\": \"checkered_flag\"\r\n                }\r\n              ]\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home Preview",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"home\",\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \"This is a plain text section block.\",\r\n        \"emoji\": true\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"This is a mrkdwn section block :ghost: *this is bold*, and ~this is crossed out~, and <https://google.com|this is a link>\"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"rich_text\",\r\n      \"elements\": [\r\n        {\r\n          \"type\": \"rich_text_section\",\r\n          \"elements\": [\r\n            {\r\n              \"type\": \"emoji\",\r\n              \"name\": \"basketball\"\r\n            },\r\n            {\r\n              \"type\": \"text\",\r\n              \"text\": \" \"\r\n            },\r\n            {\r\n              \"type\": \"emoji\",\r\n              \"name\": \"snowboarder\"\r\n            },\r\n            {\r\n              \"type\": \"text\",\r\n              \"text\": \" \"\r\n            },\r\n            {\r\n              \"type\": \"emoji\",\r\n              \"name\": \"checkered_flag\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Template1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"home\",\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \"This is a plain text section block.\",\r\n        \"emoji\": true\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"This is a mrkdwn section block :ghost: *this is bold*, and ~this is crossed out~, and <https://google.com|this is a link>\"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"rich_text\",\r\n      \"elements\": [\r\n        {\r\n          \"type\": \"rich_text_section\",\r\n          \"elements\": [\r\n            {\r\n              \"type\": \"emoji\",\r\n              \"name\": \"basketball\"\r\n            },\r\n            {\r\n              \"type\": \"text\",\r\n              \"text\": \" \"\r\n            },\r\n            {\r\n              \"type\": \"emoji\",\r\n              \"name\": \"snowboarder\"\r\n            },\r\n            {\r\n              \"type\": \"text\",\r\n              \"text\": \" \"\r\n            },\r\n            {\r\n              \"type\": \"emoji\",\r\n              \"name\": \"checkered_flag\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Template2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"home\",\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \"This is a plain text section block.\",\r\n        \"emoji\": true\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"This is a mrkdwn section block :ghost: *this is bold*, and ~this is crossed out~, and <https://google.com|this is a link>\"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"rich_text\",\r\n      \"elements\": [\r\n        {\r\n          \"type\": \"rich_text_section\",\r\n          \"elements\": [\r\n            {\r\n              \"type\": \"emoji\",\r\n              \"name\": \"basketball\"\r\n            },\r\n            {\r\n              \"type\": \"text\",\r\n              \"text\": \" \"\r\n            },\r\n            {\r\n              \"type\": \"emoji\",\r\n              \"name\": \"snowboarder\"\r\n            },\r\n            {\r\n              \"type\": \"text\",\r\n              \"text\": \" \"\r\n            },\r\n            {\r\n              \"type\": \"emoji\",\r\n              \"name\": \"checkered_flag\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Template3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"Hey there 👋 I'm TaskBot. I'm here to help you create and manage tasks in Slack.\\nThere are two ways to quickly create tasks:\"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"*1️⃣ Use the `/task` command*. Type `/task` followed by a short description of your tasks and I'll ask for a due date (if applicable). Try it out by using the `/task` command in this channel.\"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"*2️⃣ Use the _Create a Task_ action.* If you want to create a task from a message, select `Create a Task` in a message's context menu. Try it out by selecting the _Create a Task_ action for this message (shown below).\"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"image\",\r\n      \"title\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \"image1\",\r\n        \"emoji\": true\r\n      },\r\n      \"image_url\": \"https://api.slack.com/img/blocks/bkb_template_images/onboardingComplex.jpg\",\r\n      \"alt_text\": \"image1\"\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"➕ To start tracking your team's tasks, *add me to a channel* and I'll introduce myself. I'm usually added to a team or project channel. Type `/invite @TaskBot` from the channel or pick a channel on the right.\"\r\n      },\r\n      \"accessory\": {\r\n        \"type\": \"conversations_select\",\r\n        \"placeholder\": {\r\n          \"type\": \"plain_text\",\r\n          \"text\": \"Select a channel...\",\r\n          \"emoji\": true\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"divider\"\r\n    },\r\n    {\r\n      \"type\": \"context\",\r\n      \"elements\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \"👀 View all tasks with `/task list`\\n❓Get help at any time with `/task help` or type *help* in a DM with me\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Template4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"blocks\": [\r\n    {\r\n      \"type\": \"header\",\r\n      \"text\": {\r\n        \"type\": \"plain_text\",\r\n        \"text\": \":newspaper:  Paper Company Newsletter  :newspaper:\"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"context\",\r\n      \"elements\": [\r\n        {\r\n          \"text\": \"*November 12, 2019*  |  Sales Team Announcements\",\r\n          \"type\": \"mrkdwn\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"divider\"\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \" :loud_sound: *IN CASE YOU MISSED IT* :loud_sound:\"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"Replay our screening of *Threat Level Midnight* and pick up a copy of the DVD to give to your customers at the front desk.\"\r\n      },\r\n      \"accessory\": {\r\n        \"type\": \"button\",\r\n        \"text\": {\r\n          \"type\": \"plain_text\",\r\n          \"text\": \"Watch Now\",\r\n          \"emoji\": true\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"The *2019 Dundies* happened. \\nAwards were given, heroes were recognized. \\nCheck out *#dundies-2019* to see who won awards.\"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"divider\"\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \":calendar: |   *UPCOMING EVENTS*  | :calendar: \"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"`11/20-11/22` *Beet the Competition* _ annual retreat at Schrute Farms_\"\r\n      },\r\n      \"accessory\": {\r\n        \"type\": \"button\",\r\n        \"text\": {\r\n          \"type\": \"plain_text\",\r\n          \"text\": \"RSVP\",\r\n          \"emoji\": true\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"`12/01` *Toby's Going Away Party* at _Benihana_\"\r\n      },\r\n      \"accessory\": {\r\n        \"type\": \"button\",\r\n        \"text\": {\r\n          \"type\": \"plain_text\",\r\n          \"text\": \"Learn More\",\r\n          \"emoji\": true\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"`11/13` :pretzel: *Pretzel Day* :pretzel: at _Scranton Office_\"\r\n      },\r\n      \"accessory\": {\r\n        \"type\": \"button\",\r\n        \"text\": {\r\n          \"type\": \"plain_text\",\r\n          \"text\": \"RSVP\",\r\n          \"emoji\": true\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"divider\"\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \":calendar: |   *PAST EVENTS*  | :calendar: \"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"`10/21` *Conference Room Meeting*\"\r\n      },\r\n      \"accessory\": {\r\n        \"type\": \"button\",\r\n        \"text\": {\r\n          \"type\": \"plain_text\",\r\n          \"text\": \"Watch Recording\",\r\n          \"emoji\": true\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"divider\"\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"*FOR YOUR INFORMATION*\"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \":printer: *Sabre Printers* are no longer catching on fire! The newest version of our printers are safe to use. Make sure to tell your customers today.\",\r\n        \"verbatim\": false\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"divider\"\r\n    },\r\n    {\r\n      \"type\": \"section\",\r\n      \"text\": {\r\n        \"type\": \"mrkdwn\",\r\n        \"text\": \"Please join me in welcoming our 3 *new hires* to the Paper Company family! \\n\\n *Robert California*, CEO \\n\\n *Ryan Howard*, Temp \\n\\n *Erin Hannon*, Receptionist \"\r\n      }\r\n    },\r\n    {\r\n      \"type\": \"divider\"\r\n    },\r\n    {\r\n      \"type\": \"context\",\r\n      \"elements\": [\r\n        {\r\n          \"type\": \"mrkdwn\",\r\n          \"text\": \":pushpin: Do you have something to include in the newsletter? Here's *how to submit content*.\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T064LV72SBD",
+						"B0646JVCTE3",
+						"I8ZKrALdOpB0wLFvKhoarHqa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
